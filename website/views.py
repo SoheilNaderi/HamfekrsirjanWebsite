@@ -6,11 +6,11 @@ def home(request):
     return render(request,'website/index.html') 
 
 def contact(request):
-    return HttpResponse('<h1>contact<h1>')
+    return render(request,'website/contact.html')
 
 def about(request):
-    return HttpResponse('<h1>about<h1>')
+    return render(request,'website/about.html')
 
 def jsontest(request):
-    return JsonResponse({'name':'soheil'})
+    return render(request,'website/index.html')
 
